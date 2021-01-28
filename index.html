@@ -23,22 +23,40 @@
     <div id="bank-section">
         <h2>Balance Statement</h2>
         <div class="row">
-            <div class="col-md-4 bg-danger">
-                <div>
+            <div class="col-md-4">
+                <div class="card-align deposit">
                     <h5>Deposit</h5>
                     <h2>$00</h2>
                 </div>
             </div>
-            <div class="col-md-4 bg-warning">
-                <div>
+            <div class="col-md-4">
+                <div class="card-align withdraw">
                     <h5>Withdraw</h5>
                     <h2>$00</h2>
                 </div>
             </div>
-            <div class="col-md-4 bg-info">
-                <div>
+            <div class="col-md-4">
+                <div class="card-align balance">
                     <h5>Balance</h5>
                     <h2>$00</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" class="form-control" placeholder="Amount you want to deposit">
+                    <br>
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input type="text" class="form-control" placeholder="Amount you want to withdraw">
+                    <br>
+                    <button class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>

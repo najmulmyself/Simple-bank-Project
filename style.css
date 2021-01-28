@@ -10,3 +10,18 @@ body{
 #bank-section{
     display: none;
 }
+.deposit{
+    background-color: tomato;
+}
+.withdraw{
+    background-color: lightseagreen;
+}
+.balance{
+    background-color: mediumblue;
+}
+.card-align{
+    margin: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
