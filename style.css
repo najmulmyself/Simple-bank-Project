@@ -1,4 +1,9 @@
-.h1-formation{
-    margin: 150px;
-    
+body{
+    padding: 100px;
+}
+.submit-area{
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 40px;
 }
