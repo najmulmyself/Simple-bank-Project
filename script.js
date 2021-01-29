@@ -27,3 +27,14 @@ function updateSpanText(id , depositNumber){
     const total  = depositNumber + currentNumber;
     document.getElementById(id).innerText = total;
 }
+
+const clickWithdrawButton = document.getElementById('withdraw');
+clickWithdrawButton.addEventListener('click',function(){
+    const withdrawAmount = document.getElementById('withdrawAmount').value;
+    const withdrawNumber = parseFloat(withdrawAmount);
+    const currentWithdraw = document.getElementById('withdrawText').innerText;
+    const currentWithdrawNumber = parseFloat(currentWithdraw);
+    const totalWithdraw = withdrawNumber + currentWithdrawNumber;
+    document.getElementById('withdrawText').innerText = totalWithdraw;
+    document.getElementById('withdrawAmount').value = "";
+});
