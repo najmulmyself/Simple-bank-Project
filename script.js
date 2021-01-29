@@ -8,7 +8,11 @@ submitClick.addEventListener('click',function (){
 
 const clickDepositButton = document.getElementById('deposit');
 clickDepositButton.addEventListener('click',function(){
-    const getDepositAmount = document.getElementById('getNumber').value;
-    const convertString = parseFloat(getNumber);
-    console.log(convertString);
+    const depositAmount = document.getElementById('depositAmount').value;
+    const depositNumber = parseFloat(depositAmount);
+
+    const currentDepo = document.getElementById('depositText').innerText;
+    const currentDepoNumber = parseFloat(currentDepo);
+    const totalDepo  = depositNumber + currentDepoNumber;
+    document.getElementById('depositText').innerText = totalDepo;
 });
