@@ -5,3 +5,10 @@ submitClick.addEventListener('click',function (){
     const bankSectionShown = document.getElementById('bank-section');
     bankSectionShown.style.display = 'block';
 });
+
+const clickDepositButton = document.getElementById('deposit');
+clickDepositButton.addEventListener('click',function(){
+    const getDepositAmount = document.getElementById('getNumber').value;
+    const convertString = parseFloat(getNumber);
+    console.log(convertString);
+});
