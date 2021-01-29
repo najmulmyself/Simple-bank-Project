@@ -18,7 +18,20 @@ clickDepositButton.addEventListener('click',function(){
     document.getElementById('depositAmount').value = "";
     updateSpanText('depositText',depositNumber)
     updateSpanText('balanceText',depositNumber)
+    
+});
 
+const clickWithdrawButton = document.getElementById('withdraw');
+clickWithdrawButton.addEventListener('click',function(){
+    const withdrawAmount = document.getElementById('withdrawAmount').value;
+    const withdrawNumber = parseFloat(withdrawAmount);
+    // const currentWithdraw = document.getElementById('withdrawText').innerText;
+    // const currentWithdrawNumber = parseFloat(currentWithdraw);
+    // const totalWithdraw = withdrawNumber + currentWithdrawNumber;
+    // document.getElementById('withdrawText').innerText = totalWithdraw;
+    document.getElementById('withdrawAmount').value = "";
+    updateSpanText('withdrawText',withdrawNumber);
+    updateSpanText('balanceText',-1 * withdrawNumber)
 });
 
 function updateSpanText(id , depositNumber){
@@ -28,13 +41,3 @@ function updateSpanText(id , depositNumber){
     document.getElementById(id).innerText = total;
 }
 
-const clickWithdrawButton = document.getElementById('withdraw');
-clickWithdrawButton.addEventListener('click',function(){
-    const withdrawAmount = document.getElementById('withdrawAmount').value;
-    const withdrawNumber = parseFloat(withdrawAmount);
-    const currentWithdraw = document.getElementById('withdrawText').innerText;
-    const currentWithdrawNumber = parseFloat(currentWithdraw);
-    const totalWithdraw = withdrawNumber + currentWithdrawNumber;
-    document.getElementById('withdrawText').innerText = totalWithdraw;
-    document.getElementById('withdrawAmount').value = "";
-});
