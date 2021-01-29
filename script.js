@@ -5,3 +5,7 @@ clicked.addEventListener('click',function(){
     const transactionArea = document.getElementById('bank-section');
     transactionArea.style.display = 'block';
 });
+const addDeposit = getElementById('clickDeposit');
+addDeposit.addEventListener('click',function(){
+    console.log('Hello');
+});
