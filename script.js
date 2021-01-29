@@ -1,11 +1,7 @@
-const clicked =document.getElementById('click');
-clicked.addEventListener('click',function(){
-    const ifClicked = document.getElementById('login-area');
-    ifClicked.style.display = 'none';
-    const transactionArea = document.getElementById('bank-section');
-    transactionArea.style.display = 'block';
-});
-const addDeposit = getElementById('clickDeposit');
-addDeposit.addEventListener('click',function(){
-    console.log('Hello');
+const submitClick = document.getElementById('submit');
+submitClick.addEventListener('click',function (){
+    const hideLoginArea = document.getElementById('login-area');
+    hideLoginArea.style.display = 'none';
+    const bankSectionShown = document.getElementById('bank-section');
+    bankSectionShown.style.display = 'block';
 });
